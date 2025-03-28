@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+ }
+ 
+ html,body {
+    height: 100%;
+    width: 100%;
+ }
+ 
+ .wrapper {
+     background-color: #000;
+     position: relative;
+     color: #fff;
+ }
+ 
+ .main {
+     height: 100vh;
+     width: 100vw;
+     background-color: #000;
+     position: relative;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 5vh 5vw;
+ }
+ 
+ .main>h1 {
+     font-size: 4vw;
+     font-weight: 400;
+     position: relative;
+ } 
+ 
+ .main>.search-box {
+     margin-top: 10vh;
+ }
+ 
+ .main>.search-box .search-field {
+     background-color: black;
+     color: #fff;
+     padding: 2vh 1vw;
+     /* padding-right: 70vw; */
+     border: 1px solid #fff;
+     border-radius: 5px;
+     width: 100%;
+     max-width: 500px;
+ }
+ 
+ .main>.content {
+     height: fit-content;
+     width: 90%;
+     max-width: 800px;
+     box-shadow: 0px 0px 10px white;
+     border-radius: 5px;
+     margin-top: 5vh;
+     overflow-y: auto;
+ }
+ 
+ .main>.content .work {
+     height: fit-content;
+     border: 1px solid #fff;
+     padding: 2vh;
+     border-radius: 5px;
+     margin: 5vh 2vw;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ 
+ .main>.content .work .left {
+     width: 100%;
+     margin-bottom: 10px;
+ } 
+ 
+ .main>.content .work .right {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ } 
+ 
+ .main>.content .work p {
+     line-height: 4vh;
+ }
+ 
+ .main>.content .work .right .red, .main>.content .work .right .green {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ 
+ .main>.content .work .right .red {
+     background-color: red;
+ }
+ 
+ .main>.content .work .right .green {
+     background-color: green;
+ }
+ 
+ /* Responsive Design */
+ @media screen and (max-width: 768px) {
+     .main>h1 {
+         font-size: 6vw;
+     }
+     .main>.search-box .search-field {
+         padding: 1.5vh 1vw;
+     }
+     .main>.content .work {
+         flex-direction: column;
+         align-items: center;
+     }
+     .main>.content .work .right {
+         width: 100%;
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .main>h1 {
+         font-size: 7vw;
+     }
+     .main>.search-box .search-field {
+         padding: 1.2vh 1vw;
+     }
+ }
+ 
